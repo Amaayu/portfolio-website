@@ -197,6 +197,25 @@
                 observer.observe(project);
             });
         });
+        document.addEventListener('DOMContentLoaded', function () {
+            const profilePicture = document.querySelector('.profile-picture');
+
+            // Create an Intersection Observer instance
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the 'zoomed' class when the profile picture is in view
+                        profilePicture.classList.add('zoomed');
+                    } else {
+                        // Remove the 'zoomed' class when the profile picture is out of view
+                        profilePicture.classList.remove('zoomed');
+                    }
+                });
+            });
+
+            // Observe the profile picture
+            observer.observe(profilePicture);
+        });
 
 
     </script>

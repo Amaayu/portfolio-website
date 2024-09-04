@@ -318,17 +318,23 @@ ul {
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom effect */
 }
 
-/* Zoom effect on hover and focus */
-.profile-picture:hover,
-.profile-picture:focus {
+/* Profile Picture Style */
+.profile-picture {
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the image and adds margin at the bottom */
+    width: 150px; /* Set the size of the profile picture */
+    height: 150px; /* Ensures the image is a perfect circle */
+    border-radius: 50%; /* Makes the image fully rounded */
+    border: 4px solid #6a1b9a; /* Optional: Adds a border with the theme color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+/* Zoom effect when profile picture becomes visible */
+.profile-picture.zoomed {
     transform: scale(1.1); /* Slightly enlarges the image */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhances the shadow for a more dramatic effect */
 }
 
-/* Ensure touch devices can trigger the focus state */
-.profile-picture {
-    touch-action: manipulation;
-    outline: none; /* Remove the default outline on focus */
-}
 
 
