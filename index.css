@@ -330,11 +330,12 @@ ul {
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom effect */
 }
 
-/* Zoom effect when profile picture becomes visible */
+/* Enhanced Zoom effect when profile picture becomes visible */
 .profile-picture.zoomed {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhances the shadow for a more dramatic effect */
+    transform: scale(1.3); /* Increased scale for a more noticeable zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for a more dramatic effect */
 }
+
 
 
 
