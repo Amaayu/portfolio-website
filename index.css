@@ -306,17 +306,7 @@ ul {
     padding-left: 0; /* Optional: Removes the default padding on the left side */
     margin-left: 0;  /* Optional: Adjusts margin to align with other content */
 }
-/* Profile Picture Style */
-.profile-picture {
-    display: block;
-    margin: 0 auto 20px auto; /* Centers the image and adds margin at the bottom */
-    width: 150px; /* Set the size of the profile picture */
-    height: 150px; /* Ensures the image is a perfect circle */
-    border-radius: 50%; /* Makes the image fully rounded */
-    border: 4px solid #6a1b9a; /* Optional: Adds a border with the theme color */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for zoom effect */
-}
+
 
 /* Profile Picture Style */
 .profile-picture {
@@ -335,7 +325,3 @@ ul {
     transform: scale(1.3); /* Increased scale for a more noticeable zoom */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for a more dramatic effect */
 }
-
-
-
-
