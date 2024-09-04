@@ -271,7 +271,7 @@ html {
     max-width: 600px; /* Maximum width for the project cards */
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transition for the zoom effect */
     opacity: 0; /* Start hidden */
-    transform: scale(0.95); /* Initial scale */
+    transform: scale(1); /* Set the initial scale to 1 */
 }
 
 .project img {
@@ -291,12 +291,13 @@ html {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
 }
 
-/* Zoom out effect when not visible */
+/* Remove zoom-out effect */
 .project.not-visible {
-    opacity: 0;
-    transform: scale(0.95); /* Slightly smaller scale when not visible */
+    opacity: 1;
+    transform: scale(1); /* Keep the scale at 1, so no zoom-out effect */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Normal shadow */
 }
+
 #portfolio h2{
     margin-bottom: 40px;
 }
