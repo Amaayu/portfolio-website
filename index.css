@@ -1,0 +1,308 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #8e24aa;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #9c27b0;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    background-color: #e1bee7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.service {
+    margin: 20px auto;
+    background-color: #d1c4e9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+/* Testimonials Section */
+blockquote {
+    font-style: italic;
+    background-color: #e8eaf6;
+    padding: 20px;
+    border-left: 5px solid #7b1fa2;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Contact Section */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6a1b9a;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7b1fa2;
+}
+
+/* Social Media Section */
+#social-media {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f3e5f5;
+}
+
+#social-media .social-links a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+#social-media .social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#social-media .social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure the menu is always visible on all screen sizes */
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: row; /* Keep items in a row */
+        justify-content: center; /* Center the menu items */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Adjust margin if needed */
+    }
+
+    nav ul li a {
+        font-size: 17px; /* Adjust font size for smaller screens if necessary */
+    }
+}
+
+/* Email Link Styles */
+#contact p a.no-underline {
+    text-decoration: none; /* Removes the underline */
+    color: blue; /* Keeps the link color consistent with surrounding text */
+}
+
+#contact p a.no-underline:hover {
+    text-decoration: underline; /* Optional: Adds underline back on hover */
+}
+
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+    #contact {
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+
+    form {
+        padding: 15px; /* Add some padding to the form */
+        margin-right: 12px;
+        font-size: 14px; /* Adjust font size for better readability */
+        
+    }
+
+    form input, form textarea {
+        padding: 8px; /* Adjust padding for input fields */
+        font-size: 14px; /* Adjust font size */
+        margin-bottom: 10px; /* Reduce margin-bottom */
+    }
+
+    form textarea {
+        resize: vertical; /* Allow vertical resizing if needed */
+    }
+
+    form button {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+    form input{
+        height: 20px;
+    }
+}
+
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.project {
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjusted to keep the cards responsive */
+    max-width: 600px; /* Maximum width for the project cards */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transition for the zoom effect */
+    opacity: 0; /* Start hidden */
+    transform: scale(0.95); /* Initial scale */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners for the images */
+}
+
+/* Gap Between Projects */
+.project-gap {
+    height: 40px; /* Adjust the gap between the project cards */
+}
+
+/* Zoom in effect when visible */
+.project.visible {
+    opacity: 1;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
+/* Zoom out effect when not visible */
+.project.not-visible {
+    opacity: 0;
+    transform: scale(0.95); /* Slightly smaller scale when not visible */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Normal shadow */
+}
+#portfolio h2{
+    margin-bottom: 40px;
+}
+/* Remove bullet points from lists */
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Optional: Removes the default padding on the left side */
+    margin-left: 0;  /* Optional: Adjusts margin to align with other content */
+}
